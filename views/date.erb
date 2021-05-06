@@ -1,9 +1,10 @@
 <html>
     <head>
-        <title>My First View!!</title>
+        <title>Sinatra Views Lab II - Date</title>
     </head>
     <body>
-        <h1>The date is Thursday, May 06, 2021. </h1>
+        <% today = Date.today.strftime("%A, %B %d, %Y") %>
+        <h1>The date is <%=today%></h1>
         <p>This HTML code is inside of a '.erb' file in the views directory, where it belongs.</p>
     </body>
 </html>
